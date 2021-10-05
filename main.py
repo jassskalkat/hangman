@@ -10,7 +10,7 @@ print("H A N G M A N")
 while True:
 
     # select the menu to play the game
-    menu_selection = input('Type "play" to play the game, "exit" to quit: ')
+    menu_selection = input('Type "play" to play the game, "exit" to quit: > ')
     print()
 
     # play the game
@@ -34,24 +34,24 @@ while True:
 
             # guess for the random character according to the rules defined
             # character guessed must be a single lowercase english letter
-            guess = input("Input a letter: ")
+            guess = input("Input a letter: > ")
             letter_list = list(guess)
             while not guess.isalpha() or not guess.islower() or not len(letter_list) == 1:
                 if len(letter_list) == 1:
                     if not guess.isalpha():
                         print("Please enter a lowercase English letter\n")
                         print(progress)
-                        guess = input("Input a letter: ")
+                        guess = input("Input a letter: > ")
                         letter_list = list(guess)
                     elif not guess.islower():
                         print("Please enter a lowercase English letter\n")
                         print(progress)
-                        guess = input("Input a letter: ")
+                        guess = input("Input a letter: > ")
                         letter_list = list(guess)
                 else:
                     print("You should input a single letter\n")
                     print(progress)
-                    guess = input("Input a letter: ")
+                    guess = input("Input a letter: > ")
                     letter_list = list(guess)
 
             # guess the word again if player guess the same word again
