@@ -1,5 +1,5 @@
 # Hangman is a puzzle game in which a player tries to guess a word letter by letter.
-# If you fail, you'll be “hanged”. If you win, you'll survive.
+# If you fail, you'll be “hanged”. If you win, you'll survive. 
 
 # random module
 import random
